@@ -1,0 +1,91 @@
+
+body {
+    background: lightgray;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 8rem auto;
+}
+
+.container-child {
+    max-width: 350px;
+    width: 100%;
+}
+
+.calculator {
+    border-radius: 2rem;
+    
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+}
+
+.calculator .display {
+    background: black;
+    padding: 1em;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.display .calculator-display {
+    display: grid;
+    grid-template-rows: 2, 1fr;
+    height: 75px;
+    width: auto;
+    border: 0px;
+    background:lightgray;
+    border-radius: 15%;
+    padding: 10px;
+
+}
+
+output#user-input {
+    text-align: right;
+    font-size: 28px;
+    color: black;
+}
+
+output#result {
+    font-size: 24px;
+    color: orange;
+}
+.calculator-display output {
+    background: transparent;
+    width: 100%;
+}
+
+ .calculator .buttons {
+    background: black;
+    padding: 10px;
+    grid-gap: 10px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+ .buttons button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 50%;
+    border: 0px transparent;
+    color: white;
+    background: orange;
+    cursor: pointer;
+    transition: all .10s ease-in-out;
+}
+
+button.equals {
+    width: 1rem;
+    border-radius: 50%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}  
